@@ -20,7 +20,7 @@ function endPoint(b) {
 }
 
 function createBranch(branch, end, randomAngle, angleDelta) {
-  var branch = {
+  return {
     'index' : branches.length,
     'x' : end.x,
     'y' : end.y,
@@ -29,7 +29,6 @@ function createBranch(branch, end, randomAngle, angleDelta) {
     'depth' : branch.depth + 1,
     'parent' : branch.index
   }
-  return branch;
 }
 
 function createTree(branch) {
